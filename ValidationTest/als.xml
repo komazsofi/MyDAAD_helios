@@ -1,0 +1,34 @@
+<document>
+<survey defaultScannerSettings="profile1" name="simple_plane_als_1" scene="Scene4" platform="data/platforms.xml#sr22" scanner="data/scanners_als.xml#riegl_lms-q560">
+	
+		<leg>
+		<platformSettings  x="0" y="100" z="380.0" onGround="false" movePerSec_m="41"/>
+		<scannerSettings  active="true" pulseFreq_hz="240000" scanAngle_deg="45.0" scanFreq_hz="160" headRotatePerSec_deg="0"/>
+		</leg>
+		<leg>
+		<platformSettings  x="0" y="-100" z="380.0" onGround="false" movePerSec_m="41"/>
+		<scannerSettings  active="true" pulseFreq_hz="240000" scanAngle_deg="45.0" scanFreq_hz="160" headRotatePerSec_deg="0"/>
+		</leg>
+
+		<FWFSettings scannerEfficiency="1" atmosphericVisibility="1" />
+		
+	</survey>
+
+	<scene id="Scene4" name="A tree">
+		
+		<sunDir x="0" y="1" z="-1" />
+		<skybox azimuth_deg="275" texturesFolder="textures/sky/sky6_1024"/> 
+
+		<part>
+
+			<filter type="objloader">
+				<param type="string" key="filepath" value="C:\zsofia\DAAD_Heidelberg_2016\FromHDD\PastRun\Helios_test_diffplatform\simple_plane_rot.obj" />
+			</filter>
+
+			<filter type="translate">
+				<param type="vec3" key="offset" value="0.0;0.0;0.0"/>						
+			</filter>
+		</part>
+
+	</scene>
+</document>

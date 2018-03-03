@@ -1,0 +1,34 @@
+<document>
+<survey defaultScannerSettings="profile1" name="simple_plane_uls_1" scene="Scene4" platform="data/platforms.xml#quadcopter" scanner="data/scanners_als.xml#riegl_vux-1uav">
+	
+		<leg>
+		<platformSettings  x="-50" y="-50" z="160" onGround="false" movePerSec_m="4.1"/>
+		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="45" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
+		</leg>
+		<leg>
+		<platformSettings  x="50" y="50" z="160" onGround="false" movePerSec_m="4.1"/>
+		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="45" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
+		</leg>
+
+		<FWFSettings scannerEfficiency="1" atmosphericVisibility="1" />
+		
+	</survey>
+
+	<scene id="Scene4" name="A tree">
+		
+		<sunDir x="0" y="1" z="-1" />
+		<skybox azimuth_deg="275" texturesFolder="textures/sky/sky6_1024"/> 
+
+		<part>
+
+			<filter type="objloader">
+				<param type="string" key="filepath" value="C:\zsofia\DAAD_Heidelberg_2016\FromHDD\PastRun\Helios_test_diffplatform\simple_plane_rot.obj" />
+			</filter>
+
+			<filter type="translate">
+				<param type="vec3" key="offset" value="0.0;0.0;0.0"/>						
+			</filter>
+		</part>
+
+	</scene>
+</document>

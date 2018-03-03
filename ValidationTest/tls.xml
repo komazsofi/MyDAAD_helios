@@ -1,0 +1,30 @@
+<document>
+	<survey defaultScannerSettings="profile1" name="simple_plane_tls_1" scene="Scene4" platform="data/platforms.xml#tripod" scanner="data/scanners_tls.xml#riegl_vz400">
+	
+		<leg>
+		<platformSettings x="0" y="0" z="0" onGround="true"/>
+		<scannerSettings active="true" pulseFreq_hz="100000" scanAngle_deg="180.0" scanFreq_hz="120" headRotatePerSec_deg="10" headRotateStart_deg="0.0" headRotateStop_deg="360.0"/>
+		</leg>
+
+		<FWFSettings scannerEfficiency="1" atmosphericVisibility="1" />
+		
+	</survey>
+
+	<scene id="Scene4" name="A tree">
+		
+		<sunDir x="0" y="1" z="-1" />
+		<skybox azimuth_deg="275" texturesFolder="textures/sky/sky6_1024"/> 
+
+		<part>
+
+			<filter type="objloader">
+				<param type="string" key="filepath" value="C:\zsofia\DAAD_Heidelberg_2016\FromHDD\PastRun\Helios_test_diffplatform\simple_plane_rot.obj" />
+			</filter>
+
+			<filter type="translate">
+				<param type="vec3" key="offset" value="0.0;0.0;0.0"/>						
+			</filter>
+		</part>
+
+	</scene>
+</document>
