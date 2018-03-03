@@ -3,11 +3,11 @@
 	
 		<leg>
 		<platformSettings  x="-50" y="-50" z="160" onGround="false" movePerSec_m="4.1"/>
-		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="45" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
+		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="90" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
 		</leg>
 		<leg>
 		<platformSettings  x="50" y="50" z="160" onGround="false" movePerSec_m="4.1"/>
-		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="45" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
+		<scannerSettings  active="true" pulseFreq_hz="300000" scanAngle_deg="90" scanFreq_hz="100" headRotatePerSec_deg="10.0" headRotateStart_deg="0.0" headRotateStop_deg="0.0"/>
 		</leg>
 
 		<FWFSettings scannerEfficiency="1" atmosphericVisibility="1" />
